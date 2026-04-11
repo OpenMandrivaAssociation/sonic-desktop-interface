@@ -5,8 +5,8 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 
 Name: sonic-desktop-interface
-Version: 6.6.3
-Release: %{?git:0.%{git}.}2
+Version: 6.6.4.1
+Release: %{?git:0.%{git}.}1
 URL: https://github.com/Sonic-DE/sonic-desktop-interface
 # %if 0%{?git:1}
 # Source0: https://invent.kde.org/plasma/plasma-desktop/-/archive/%{gitbranch}/plasma-desktop-%{gitbranchd}.tar.bz2#/plasma-desktop-%{git}.tar.bz2
@@ -35,7 +35,10 @@ BuildRequires: cmake(PlasmaActivitiesStats)
 BuildRequires: cmake(KF6QQC2DesktopStyle)
 BuildRequires: cmake(KF6Baloo)
 BuildRequires: cmake(KF6ItemModels)
-BuildRequires: cmake(PlasmaActivities)
+
+# pending rename 
+# BuildRequires: cmake(PlasmaActivities)
+BuildRequires: %{_lib}SonicDEActivities-devel
 
 # pending asset rewrite
 # BuildRequires: cmake(Plasma) >= 5.90.0
@@ -47,14 +50,26 @@ BuildRequires: cmake(KF6NewStuff)
 BuildRequires: cmake(KF6NotifyConfig)
 BuildRequires: cmake(KF6Attica)
 BuildRequires: cmake(KF6Wallet)
-BuildRequires: cmake(KF6Runner)
+
+# pending rename
+# BuildRequires: cmake(KF6Runner)
+BuildRequires: %{_lib}SonicFrameworksRunner-devel
+
 BuildRequires: cmake(KF6People)
 BuildRequires: cmake(KF6Declarative)
 BuildRequires: cmake(KF6KDED)
 BuildRequires: cmake(KF6DBusAddons)
-BuildRequires: cmake(KF6GlobalAccel)
+
+# pending rename
+# BuildRequires: cmake(KF6GlobalAccel)
+BuildRequires: %{_lib}SonicFrameworksKeybind-devel
+
 BuildRequires: cmake(KF6Notifications)
-BuildRequires: cmake(KF6Kirigami2)
+
+# pending rename
+# BuildRequires: cmake(KF6Kirigami2)
+BuildRequires: %{_lib}SonicFrameworksQuickUI-devel
+
 BuildRequires: cmake(KF6Sonnet)
 
 # pending rename
