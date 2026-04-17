@@ -168,8 +168,8 @@ Conflicts:    plasma-desktop
 %summary
 
 %patchlist
-sonic-desktop-interface-default-to-kicker.patch
-taskmanager-config.patch
+# sonic-desktop-interface-default-to-kicker.patch
+# taskmanager-config.patch
 
 %install -a
 # (tpg) use layout.js and kde-mimeapps.list from distro-plasma-config
