@@ -313,11 +313,11 @@ rm -rf %{buildroot}%{_datadir}/sddm/themes/breeze
 %{_datadir}/applications/kaccess.desktop
 %{_datadir}/kcm_recentFiles
 %{_qtdir}/plugins/attica_kde.so
-%dir %{_datadir}/accounts/providers
-%dir %{_datadir}/accounts/providers/kde
+# %dir %{_datadir}/accounts/providers
+# %dir %{_datadir}/accounts/providers/kde
 %{_prefix}/lib/systemd/user/plasma-kaccess.service
 %{_qtdir}/qml/org/kde/plasma/private/kcm_keyboard
-%{_datadir}/accounts/providers/kde/opendesktop.provider
-%{_datadir}/accounts/services/kde/opendesktop-rating.service
+# %{_datadir}/accounts/providers/kde/opendesktop.provider
+# %{_datadir}/accounts/services/kde/opendesktop-rating.service
 %{_datadir}/kglobalaccel/org.kde.touchpadshortcuts.desktop
 
