@@ -5,7 +5,7 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 
 Name: sonic-desktop-interface
-Version: 6.6.4.1
+Version: 6.6.5
 Release: %{?git:0.%{git}.}1
 URL: https://github.com/Sonic-DE/sonic-desktop-interface
 # %if 0%{?git:1}
