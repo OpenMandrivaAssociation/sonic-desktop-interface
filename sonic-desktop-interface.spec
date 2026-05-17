@@ -43,12 +43,14 @@ BuildRequires: %{_lib}SonicDEActivities-devel
 # pending asset rewrite
 # BuildRequires: cmake(Plasma) >= 5.90.0
 # BuildRequires: cmake(PlasmaQuick) >= 5.90.0
+# BuildRequires: cmake(KF6Attica)
 BuildRequires: %{_lib}SonicDE-devel
+BuildRequires: %{_lib}SonicFrameworksOpenCollab-devel
 
 BuildRequires: cmake(KF6KCMUtils)
 BuildRequires: cmake(KF6NewStuff)
 BuildRequires: cmake(KF6NotifyConfig)
-BuildRequires: cmake(KF6Attica)
+
 BuildRequires: cmake(KF6Wallet)
 
 # pending rename
