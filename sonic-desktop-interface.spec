@@ -203,7 +203,6 @@ rm -rf %{buildroot}%{_datadir}/sddm/themes/breeze
 %{_bindir}/knetattach
 %{_bindir}/kapplymousetheme
 %{_bindir}/plasma-emojier
-%{_libdir}/libexec/kf6/kauth/kcmdatetimehelper
 %{_qtdir}/plugins/kf6/kded/*.so
 %{_qtdir}/qml/org/kde/plasma/activityswitcher
 %{_qtdir}/qml/org/kde/private/desktopcontainment
@@ -218,7 +217,6 @@ rm -rf %{buildroot}%{_datadir}/sddm/themes/breeze
 %{_datadir}/applications/org.kde.plasma.emojier.desktop
 %{_datadir}/config.kcfg/*
 %{_datadir}/dbus-1/interfaces/*.xml
-%{_datadir}/dbus-1/system-services/*
 %{_iconsdir}/hicolor/*/*/*.*[g-z]
 %{_datadir}/kcmkeys
 %{_datadir}/kcmsolidactions
@@ -233,8 +231,6 @@ rm -rf %{buildroot}%{_datadir}/sddm/themes/breeze
 %{_datadir}/plasma/plasmoids/org.kde.plasma.icontasks
 %{_datadir}/plasma/shells
 %{_datadir}/solid/devices
-%{_datadir}/dbus-1/system.d/org.kde.kcontrol.kcmclock.conf
-%{_datadir}/polkit-1/actions/org.kde.kcontrol.kcmclock.policy
 %{_datadir}/plasma/plasmoids/org.kde.plasma.minimizeall
 %{_bindir}/tastenbrett
 %{_sysconfdir}/xdg/autostart/kaccess.desktop
@@ -276,8 +272,8 @@ rm -rf %{buildroot}%{_datadir}/sddm/themes/breeze
 %{_qtdir}/plugins/plasma/kcms/systemsettings/kcm_gamecontroller.so
 %{_qtdir}/plugins/plasma/kcms/systemsettings_qwidgets/kcm_clock.so
 %{_qtdir}/plugins/plasma/applets/org.kde.plasma.keyboardlayout.so
+%{_qtdir}/qml/org/kde/plasma/keyboardlayout
 %{_qtdir}/plugins/plasma/applets/org.kde.plasma.kimpanel.so
-%{_qtdir}/plugins/plasma/applets/org.kde.plasma.marginsseparator.so
 %{_qtdir}/plugins/plasma/applets/org.kde.plasma.pager.so
 %{_qtdir}/plugins/plasma/applets/org.kde.plasma.showActivityManager.so
 %{_qtdir}/plugins/plasma/applets/org.kde.plasma.showdesktop.so
@@ -302,6 +298,8 @@ rm -rf %{buildroot}%{_datadir}/sddm/themes/breeze
 %{_datadir}/applications/kcm_touchscreen.desktop
 %{_datadir}/applications/kcm_workspace.desktop
 %{_datadir}/applications/kcmspellchecking.desktop
+%{_datadir}/kconf_update/50-krunner-activate-typing.sh
+%{_datadir}/kconf_update/50-krunner-activate-typing.upd
 %{_datadir}/qlogging-categories6/kcm_gamecontroller.categories
 %{_datadir}/qlogging-categories6/kcm_tablet.categories
 %{_qtdir}/plugins/plasma/kcms/desktop/kcm_krunnersettings.so
