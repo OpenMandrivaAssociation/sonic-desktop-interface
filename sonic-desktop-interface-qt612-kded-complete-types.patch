@@ -1,0 +1,13 @@
+diff -Naur a/kcms/kded/kcmkded.h b/kcms/kded/kcmkded.h
+--- a/kcms/kded/kcmkded.h
++++ b/kcms/kded/kcmkded.h
+@@ -15,9 +15,7 @@
+ class KPluginMetaData;
+ 
+ class ModulesModel;
+-Q_DECLARE_OPAQUE_POINTER(ModulesModel *)
+ class FilterProxyModel;
+-Q_DECLARE_OPAQUE_POINTER(FilterProxyModel *)
+ 
+ class OrgKdeKded6Interface;
+ 

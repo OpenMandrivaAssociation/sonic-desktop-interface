@@ -172,6 +172,7 @@ Conflicts:    plasma-desktop
 %patchlist
 # sonic-desktop-interface-default-to-kicker.patch
 # taskmanager-config.patch
+sonic-desktop-interface-qt612-kded-complete-types.patch
 
 %install -a
 # (tpg) use layout.js and kde-mimeapps.list from distro-plasma-config
